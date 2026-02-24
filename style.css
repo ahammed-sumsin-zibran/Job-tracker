@@ -37,12 +37,16 @@ body {
 header {
   background: white;
   border: 1px solid var(--border);
-  border-radius: 16px;
   padding: 28px;
   margin-bottom: 40px;
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
 h1 {
@@ -60,10 +64,14 @@ h1 {
 .stat {
   background: white;
   border: 1px solid var(--border);
-  border-radius: 12px;
   padding: 20px 16px;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .stat h3 {
@@ -113,13 +121,17 @@ h1 {
 
 .tab-btn {
   padding: 10px 20px;
-  border-radius: 999px;
   border: 1px solid var(--border);
   background: white;
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
 }
 
 .tab-btn.active {
@@ -141,9 +153,13 @@ h1 {
 .job-card {
   background: white;
   border: 1px solid var(--border);
-  border-radius: 14px;
   padding: 22px;
   transition: all 0.2s;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
 }
 
 .job-card:hover {
@@ -193,10 +209,14 @@ h1 {
 .status-tag {
   display: inline-block;
   padding: 6px 16px;
-  border-radius: 999px;
   font-size: 0.88rem;
   font-weight: 600;
   margin-bottom: 16px;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
 }
 
 .status-not-applied {
@@ -223,12 +243,16 @@ h1 {
 
 .action-btn {
   padding: 10px 22px;
-  border-radius: 999px;
   font-size: 0.94rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
   transition: all 0.15s;
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
 }
 
 .btn-interview {
@@ -255,12 +279,23 @@ h1 {
   text-align: center;
   padding: 120px 24px;
   color: var(--text-light);
+  background: #fff;
+  border-radius: 10px;
+  x-webkit-border-radius:;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+  > h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
 }
 
 .empty-icon {
-  font-size: 5.5rem;
-  opacity: 0.45;
-  margin-bottom: 1.2rem;
+  /* font-size: 5.5rem; */
+  margin-bottom: 1rem;
 }
 
 .hidden {
@@ -284,8 +319,6 @@ h1 {
     justify-content: center;
   }
 }
-
-/* ... your existing CSS ... */
 
 /* Trash button styles */
 .trash-btn {
