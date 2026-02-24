@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Job Application Tracker</h1>
+        <div class="stats">
+          <div class="stat">
+            <h3>Total Applications</h3>
+            <div class="number" id="total-count">8</div>
+          </div>
+          <div class="stat interview">
+            <h3>Interviews</h3>
+            <div class="number" id="interview-count">0</div>
+          </div>
+          <div class="stat rejected">
+            <h3>Rejected</h3>
+            <div class="number" id="rejected-count">0</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="section-header">
+        <h2 class="section-title">Available Jobs</h2>
+        <div class="section-count" id="section-count">8 jobs</div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="interview">Interview</button>
+        <button class="tab-btn" data-tab="rejected">Rejected</button>
+      </div>
+
+      <div class="jobs-list" id="jobs-list">
+        <!-- Job cards with trash button added -->
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Google</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Frontend Engineer (React)</div>
+          <div class="meta">
+            <span>Remote • Full-time</span>
+            <span class="salary">$140,000 – $190,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Work on Google Search UI, large-scale React applications,
+            performance optimization, and accessibility.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Stripe</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Full-Stack Engineer</div>
+          <div class="meta">
+            <span>Dublin, Ireland • Full-time</span>
+            <span class="salary">$130,000 – $180,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Build financial infrastructure for the internet using Ruby, React,
+            and modern cloud tools.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Notion</div>
+
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Product Designer</div>
+          <div class="meta">
+            <span>San Francisco • Hybrid</span>
+            <span class="salary">$160,000 – $220,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Design beautiful, intuitive tools that help teams think better
+            together.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Vercel</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Next.js Developer</div>
+          <div class="meta">
+            <span>Remote • Full-time</span>
+            <span class="salary">$120,000 – $170,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Push the boundaries of frontend development with Next.js, Edge
+            Functions, and Turborepo.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Linear</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Backend Engineer (Go)</div>
+          <div class="meta">
+            <span>Remote • Full-time</span>
+            <span class="salary">$135,000 – $185,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            High-performance issue tracking backend with Go, TypeScript, and
+            Postgres.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Figma</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Senior UI Engineer</div>
+          <div class="meta">
+            <span>San Francisco • Hybrid</span>
+            <span class="salary">$170,000 – $240,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Build real-time collaborative design tools with WebGL, React, and
+            TypeScript.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">OpenAI</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">AI Product Engineer</div>
+          <div class="meta">
+            <span>San Francisco • Full-time</span>
+            <span class="salary">$180,000 – $300,000+</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Ship user-facing AI products at massive scale using Python, React,
+            and cutting-edge models.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+
+        <div class="job-card" data-status="not-applied">
+          <div class="job-header">
+            <div class="company">Supabase</div>
+            <button class="trash-btn" title="Remove this job">
+              <img src="./image copy.png" alt="" />
+            </button>
+          </div>
+          <div class="role">Developer Advocate</div>
+          <div class="meta">
+            <span>Remote • Full-time</span>
+            <span class="salary">$110,000 – $160,000</span>
+          </div>
+          <div class="status-tag status-not-applied" data-status-tag>
+            NOT APPLIED
+          </div>
+          <div class="description">
+            Help developers build faster with open-source Firebase alternative —
+            content, tutorials, community.
+          </div>
+          <div class="action-row" data-card-actions>
+            <button class="action-btn btn-interview" data-action="interview">
+              Interview
+            </button>
+            <button class="action-btn btn-rejected" data-action="rejected">
+              Rejected
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Per-tab empty states -->
+      <div class="empty-state hidden" id="empty-all">
+        <div class="empty-icon">📭</div>
+        <h3>No jobs yet</h3>
+        <p>Start adding or updating job applications</p>
+      </div>
+      <div class="empty-state hidden" id="empty-interview">
+        <div class="empty-icon">🎤</div>
+        <h3>No interviews scheduled</h3>
+        <p>Keep applying — your next interview is coming!</p>
+      </div>
+      <div class="empty-state hidden" id="empty-rejected">
+        <div class="empty-icon">❌</div>
+        <h3>No rejections (yet)</h3>
+        <p>Rejections are part of the process — keep going!</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
