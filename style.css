@@ -127,11 +127,11 @@ h1 {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.15s;
-  border-radius: 999px;
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
-  -ms-border-radius: 999px;
-  -o-border-radius: 999px;
+  border-radius: 900px;
+  -webkit-border-radius: 900px;
+  -moz-border-radius: 900px;
+  -ms-border-radius: 900px;
+  -o-border-radius: 900px;
 }
 
 .tab-btn.active {
@@ -281,7 +281,6 @@ h1 {
   color: var(--text-light);
   background-color: #fff;
   border-radius: 10px;
-  x-webkit-border-radius:;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
