@@ -1,4 +1,3 @@
-// start with basic counters
 let interviews = 0;
 let rejects = 0;
 let totalJobs = document.querySelectorAll(".job-card").length;

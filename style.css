@@ -212,11 +212,11 @@ h1 {
   font-size: 0.88rem;
   font-weight: 600;
   margin-bottom: 16px;
-  border-radius: 999px;
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
-  -ms-border-radius: 999px;
-  -o-border-radius: 999px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .status-not-applied {
@@ -248,11 +248,11 @@ h1 {
   cursor: pointer;
   border: none;
   transition: all 0.15s;
-  border-radius: 999px;
-  -webkit-border-radius: 999px;
-  -moz-border-radius: 999px;
-  -ms-border-radius: 999px;
-  -o-border-radius: 999px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .btn-interview {
@@ -279,7 +279,7 @@ h1 {
   text-align: center;
   padding: 120px 24px;
   color: var(--text-light);
-  background: #fff;
+  background-color: #fff;
   border-radius: 10px;
   x-webkit-border-radius:;
   -moz-border-radius: 10px;
